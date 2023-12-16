@@ -4,6 +4,7 @@ let rootId=document.getElementById("root")
 
 let finalData=[];
 
+// displaying the all the data and user search data
 function displayApiData(data){
     console.log(data)
     let{product_badge,product_image,product_title,product_variants}=data
@@ -57,7 +58,7 @@ function displayApiData(data){
 }
 
 
-
+//render data one by one
 function renderData(filterData) {
     rootId.textContent=""
     for (let result of filterData){
@@ -65,6 +66,7 @@ function renderData(filterData) {
     }
 }
 
+//filtering data based on user search
 function filterData(data, query) {
     const filteredData = data.filter(item =>
         item.product_title.toLowerCase().includes(query.toLowerCase())
@@ -97,6 +99,7 @@ async function main() {
 
 main();
 
+//user searching function
 function searchApiData(event) {
     if (event.key === "Enter") {
         let searchValue = searchData.value;
