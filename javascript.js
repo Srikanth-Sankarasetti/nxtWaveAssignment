@@ -100,10 +100,8 @@ async function main() {
 main();
 
 //user searching function
-function searchApiData(event) {
-    if (event.key === "Enter") {
+function searchApiData() { 
         let searchValue = searchData.value;
-        filterData(finalData, searchValue);
-    }
+        filterData(finalData, searchValue)
 }
 

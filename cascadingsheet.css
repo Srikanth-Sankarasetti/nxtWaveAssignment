@@ -47,6 +47,7 @@
     align-items: center;
     width: 600px;
     margin: 10px;
+    height: 30%;
 }
 
 .para{
@@ -58,11 +59,12 @@
     border-radius: 4px;
     color: wheat;
     width: 10%;
+    text-align: center;
 }
 
 .para1{
     align-self: flex-start;
-   width: 10%;
+    width: 10%;
     margin: 10px;
     padding: 2px;
     border-radius: 4px;
@@ -87,7 +89,7 @@
     padding: 0px;
 }
 .image{
-    height: 130px;
+    height:95%;
     background-size: cover;
     align-self: center;
     padding-left: 20px;
@@ -96,8 +98,8 @@
 
 @media screen  and (min-width:600px) {
     .image{
-        width: 250px;
-        height: 250px;
+        width: 25%;
+        height: 95%;
         padding: 10px;
     }
     .short_head{
